@@ -1,0 +1,7 @@
+model,concordance,ci_low,ci_high
+Cox trajectory (ours),0.663,0.626,0.704
+Process (n_authors),0.563,0.514,0.604
+Coupling (fan_in),0.559,0.52,0.608
+Static (McCabe),0.541,0.509,0.584
+Size (LOC),0.528,0.502,0.558
+Static (Halstead? via mi),0.527,0.503,0.556
