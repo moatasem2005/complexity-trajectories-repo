@@ -32,12 +32,9 @@ fourteen Python open-source projects (2005–2026).
 
 ```
 .
-├── manuscript/
-│   ├── manuscript.docx              # current draft (Word)
-│   ├── manuscript.pdf               # rendered PDF of the same draft
-│   └── related_work_notes.md        # background notes on the 5 literature streams
-├── notebooks/
-│   └── complexity_debt_trajectories.ipynb   # end-to-end pipeline (mining → guards → models → figures)
+
+
+│    complexity_debt_trajectories.ipynb   # end-to-end pipeline (mining → guards → models → figures)
 ├── scripts/
 │   ├── extract_complexity_trajectories.py   # PyDriller/Radon/AST mining
 │   ├── build_survival_fixed.py              # landmark table construction + guards
@@ -48,11 +45,6 @@ fourteen Python open-source projects (2005–2026).
 │   ├── table2_results.csv                   # main model-vs-baseline results
 │   ├── table3_leave_one_repo_out.csv        # LORO results per project
 │   └── table4_sensitivity.csv               # L × δ sensitivity grid
-├── figures/
-│   ├── figure1_pipeline.png … figure12_sensitivity.png   # all 12 manuscript figures (PNG)
-│   └── svg/                                 # editable SVG source for each figure
-├── docs/
-│   └── DATA_DICTIONARY.md                   # column-by-column description of both CSVs
 ├── LICENSE
 ├── .gitignore
 └── README.md
@@ -60,7 +52,7 @@ fourteen Python open-source projects (2005–2026).
 
 ## Reproducing the pipeline
 
-The notebook `notebooks/complexity_debt_trajectories.ipynb` is self-contained
+The notebook `complexity_debt_trajectories.ipynb` is self-contained
 and regenerates every table and figure in the manuscript from scratch:
 
 1. **Mining** — clones/traverses each repository with PyDriller, computes
@@ -110,6 +102,4 @@ meantime, please cite this repository directly if you build on it.
 
 ## License
 
-Code and data are released under the MIT License (see `LICENSE`). The
-manuscript text and figures are © the author(s) and shared here for review
-and reproducibility purposes ahead of journal submission.
+Code and data are released under the MIT License (see `LICENSE`). 
